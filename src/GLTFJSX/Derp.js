@@ -3,13 +3,13 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/derp.glb')
+  const { nodes, materials, animations } = useGLTF('derp.glb')
   const { actions } = useAnimations(animations, group)
  
   useEffect(()=> {
     actions.idleanimation.play()});
   return (
-    <group ref={group} {...props} dispose={null} scale={1.7} position={[0,-5.3,0]}>
+    <group ref={group} {...props} dispose={null} scale={2.1} position={[0,-5.5,0]}>
       <group name="Scene">
         <group name="Sun" position={[4.87, 6.93, -3.65]} />
         <group name="Spot" position={[10.78, 5.76, 1.71]} rotation={[0.16, 0, -1.03]} />
@@ -36,4 +36,4 @@ export default function Model({ ...props }) {
   )
 }
 
-useGLTF.preload('/derp.glb')
+useGLTF.preload('derp.glb')
