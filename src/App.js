@@ -3,7 +3,6 @@ import React, {Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
-
 import Derp from './GLTFJSX/Derp.js';
 import logo from './Images/getaways-logo.png';
 import derpIcon from './Images/derp_icon.svg'
