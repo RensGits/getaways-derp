@@ -1,5 +1,3 @@
-
-
 .canvas-container{
     position: relative;
     z-index: 0;
@@ -7,8 +5,7 @@
     height: 50em;
     background-color: rgb(220, 238, 247);
     max-height: 100vh;
-    max-width: 100vw;
-  
+    max-width: 100vw;  
 }
 
 .getaways-header{
