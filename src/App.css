@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav');
+
+.canvas-container{
+    position: relative;
+    z-index: 0;
+    width: 50em;
+    height: 50em;
+    background-color: rgb(220, 238, 247);
+    max-height: 100vh;
+    max-width: 100vw;
+  
+}
+
+.getaways-header{
+    position: absolute;
+    bottom: 1em;
+    right:1em;
+    width: 7em;
+    z-index: 1000;
+}
+
+.derp-icon, .derp-logo{
+    position: absolute;
+    bottom: 1em;
+}
+
+.derp-icon{
+    left: 1em;
+    height: 2em;
+}
+
+.derp-logo{
+    left: 3.5em;
+    height: 1.8em;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .canvas-container{
+        width: 100%;
+        height: 70%
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .canvas-container{
+        height: 60%;
+    }
+    .getaways-header{
+            width: 5em;
+            bottom: 0.8em;
+            right: 0.8em;
+    }
+
+    .derp-icon{
+        left: 1em;
+        height: 1.6em;
+    }
+    
+    .derp-logo{
+        left: 3.5em;
+        height: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .canvas-container{
+        height:  40%
+    }
+
+    .derp-logo{
+        left: 3em;
+        height: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .getaways-header{
+        width: 4em;
+        bottom: 0.6em;
+        right: 0.6em;
+    }
+    .derp-icon{
+        left: 0.5em;
+        height: 1.2em !important;
+    }
+    
+    .derp-logo{
+        left: 2em;
+        height: 1em;
+    }
+}
