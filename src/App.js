@@ -44,7 +44,7 @@ function App() {
   function Derp() {
     const group = useRef()
 
-    const { nodes, materials, animations } = useGLTF('derp.glb')
+    const { nodes, materials, animations } = useGLTF('getawaysDerp.glb')
     const { actions } = useAnimations(animations, group)
 
     useEffect(() => {
@@ -81,7 +81,7 @@ function App() {
     )
   }
 
-  useGLTF.preload('derp.glb')
+  useGLTF.preload('getawaysDerp.glb')
 
   return (
     <div className="canvas-container">
