@@ -9,7 +9,7 @@ export default function Model({ ...props }) {
   useEffect(()=> {
     actions.idleanimation.play()});
   return (
-    <group ref={group} {...props} dispose={null} scale={2.1} position={[0,-5.5,0]}>
+    <group ref={group} {...props} dispose={null} scale={2} position={[0,-5.5,0]}>
       <group name="Scene">
         <group name="Sun" position={[4.87, 6.93, -3.65]} />
         <group name="Spot" position={[10.78, 5.76, 1.71]} rotation={[0.16, 0, -1.03]} />
