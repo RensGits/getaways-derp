@@ -25,8 +25,8 @@
 import './App.css';
 import React, { Suspense, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, useAnimations, useGLTF, MeshWobbleMaterial } from '@react-three/drei';
-import { SelectiveBloom, DepthOfField, EffectComposer, Outline } from '@react-three/postprocessing'
+import { OrbitControls, useAnimations, useGLTF } from '@react-three/drei';
+import { SelectiveBloom, DepthOfField, EffectComposer } from '@react-three/postprocessing'
 import CustomLoader from './Functional/CustomLoader';
 import logo from './Images/getaways-logo.png';
 import derpIcon from './Images/derp_icon.svg'
@@ -39,7 +39,6 @@ function App() {
   const ambientL = useRef();
   const smallRedLights = useRef();
   const smallGreenLights = useRef();
-  const swordGreenLights = useRef();
 
   function Derp() {
     const group = useRef()
