@@ -11,7 +11,7 @@
 // https://projectgetaways.com
 // https://discord.gg/mQ2KAVNU9v
 // 
-// If you have any questions regarding this project, stop by in the discord channel.
+// For any questions regarding Getaways join our discord channel
 //
 //
 //
@@ -44,7 +44,7 @@ function App() {
   function Derp() {
     const group = useRef()
 
-    const { nodes, materials, animations } = useGLTF('getawaysDerp.glb')
+    const { nodes, materials, animations } = useGLTF('derp.glb')
     const { actions } = useAnimations(animations, group)
 
     useEffect(() => {
@@ -60,28 +60,28 @@ function App() {
           <group name="Armature" rotation={[0, 0, 0.02]}>
             <primitive object={nodes.body} />
             <primitive object={nodes['tail_high#']} />
-            <group name="Sphere026">
-              <skinnedMesh name="Sphere032" geometry={nodes.Sphere032.geometry} material={materials['body_alternative.001']} skeleton={nodes.Sphere032.skeleton} />
-              <skinnedMesh name="Sphere032_1" geometry={nodes.Sphere032_1.geometry} material={materials.body} skeleton={nodes.Sphere032_1.skeleton} />
-              <skinnedMesh name="Sphere032_2" geometry={nodes.Sphere032_2.geometry} material={materials.white} skeleton={nodes.Sphere032_2.skeleton} />
-              <skinnedMesh name="Sphere032_3" geometry={nodes.Sphere032_3.geometry} material={materials.allu} skeleton={nodes.Sphere032_3.skeleton} />
-              <skinnedMesh name="Sphere032_4" geometry={nodes.Sphere032_4.geometry} material={materials.body_alternative} skeleton={nodes.Sphere032_4.skeleton} />
-              <skinnedMesh name="Sphere032_5" geometry={nodes.Sphere032_5.geometry} material={materials.black} skeleton={nodes.Sphere032_5.skeleton} />
-              <skinnedMesh name="Sphere032_6" geometry={nodes.Sphere032_6.geometry} material={materials.dark_green} skeleton={nodes.Sphere032_6.skeleton} />
-              <skinnedMesh name="Sphere032_7" geometry={nodes.Sphere032_7.geometry} material={materials.red} skeleton={nodes.Sphere032_7.skeleton} />
-              <skinnedMesh name="Sphere032_8" geometry={nodes.Sphere032_8.geometry} material={materials.purple} skeleton={nodes.Sphere032_8.skeleton} />
-              <skinnedMesh name="Sphere032_9" geometry={nodes.Sphere032_9.geometry} material={materials['Material.002']} skeleton={nodes.Sphere032_9.skeleton} />
-              <skinnedMesh name="Sphere032_10" ref={smallGreenLights} geometry={nodes.Sphere032_10.geometry} material={materials.green_small_lights_glow} skeleton={nodes.Sphere032_10.skeleton} />
-              <skinnedMesh name="Sphere032_11" ref={smallRedLights} geometry={nodes.Sphere032_11.geometry} material={materials.red_small_lights_glow} skeleton={nodes.Sphere032_11.skeleton} />
-              <skinnedMesh name="Sphere032_12" geometry={nodes.Sphere032_12.geometry} material={materials.green_sword_glow} skeleton={nodes.Sphere032_12.skeleton} />
-            </group>
+            <group name="Sphere003">
+              <skinnedMesh name="Sphere003_1" geometry={nodes.Sphere003_1.geometry} material={materials['body_alternative.001']} skeleton={nodes.Sphere003_1.skeleton} />
+              <skinnedMesh name="Sphere003_2" geometry={nodes.Sphere003_2.geometry} material={materials.body} skeleton={nodes.Sphere003_2.skeleton} />
+              <skinnedMesh name="Sphere003_3" geometry={nodes.Sphere003_3.geometry} material={materials.white} skeleton={nodes.Sphere003_3.skeleton} />
+              <skinnedMesh name="Sphere003_4" geometry={nodes.Sphere003_4.geometry} material={materials.allu} skeleton={nodes.Sphere003_4.skeleton} />
+              <skinnedMesh name="Sphere003_5" geometry={nodes.Sphere003_5.geometry} material={materials.body_alternative} skeleton={nodes.Sphere003_5.skeleton} />
+              <skinnedMesh name="Sphere003_6" geometry={nodes.Sphere003_6.geometry} material={materials.black} skeleton={nodes.Sphere003_6.skeleton} />
+              <skinnedMesh name="Sphere003_7" geometry={nodes.Sphere003_7.geometry} material={materials.dark_green} skeleton={nodes.Sphere003_7.skeleton} />
+              <skinnedMesh name="Sphere003_8" geometry={nodes.Sphere003_8.geometry} material={materials.red} skeleton={nodes.Sphere003_8.skeleton} />
+              <skinnedMesh name="Sphere003_9" geometry={nodes.Sphere003_9.geometry} material={materials.purple} skeleton={nodes.Sphere003_9.skeleton} />
+              <skinnedMesh name="Sphere003_10" geometry={nodes.Sphere003_10.geometry} material={materials['Material.002']} skeleton={nodes.Sphere003_10.skeleton} />
+              <skinnedMesh name="Sphere003_11" geometry={nodes.Sphere003_11.geometry} material={materials.green_small_lights_glow} skeleton={nodes.Sphere003_11.skeleton} ref={smallGreenLights} />
+              <skinnedMesh name="Sphere003_12" geometry={nodes.Sphere003_12.geometry} material={materials.red_small_lights_glow} skeleton={nodes.Sphere003_12.skeleton} ref={smallRedLights} />
+              <skinnedMesh name="Sphere003_13" geometry={nodes.Sphere003_13.geometry} material={materials.green_sword_glow} skeleton={nodes.Sphere003_13.skeleton} />
+          </group>
           </group>
         </group>
       </group>
     )
   }
 
-  useGLTF.preload('getawaysDerp.glb')
+  useGLTF.preload('derp.glb')
 
   return (
     <div className="canvas-container">
